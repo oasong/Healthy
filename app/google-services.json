@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "567697172967",
+    "firebase_url": "https://homehealthy-d0ac1.firebaseio.com",
+    "project_id": "homehealthy-d0ac1",
+    "storage_bucket": "homehealthy-d0ac1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567697172967:android:769d121050bb1f4e",
+        "android_client_info": {
+          "package_name": "it59070098.kmitl.healthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567697172967-4a0flrh27rcsv06ofgr3j0phkn1mkhph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASZlFV7iUCFwq0wBnOcyVmypUN7aCls2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

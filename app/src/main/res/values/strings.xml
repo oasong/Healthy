@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Healthy</string>
+
+    <string-array name="menu1">
+        <item>BMI Calculater</item>
+        <item>blank one</item>
+        <item>blank two</item>
+    </string-array>
+</resources>
