@@ -20,7 +20,10 @@
         <activity android:name=".registerpage" />
         <activity android:name=".menupage" />
         <activity android:name=".weightpage" />
-        <activity android:name=".addweightpage"></activity>
+        <activity android:name=".addweightpage" />
+        <activity android:name=".sleepform" />
+        <activity android:name=".sleepitem" />
+        <activity android:name=".sleep"></activity>
     </application>
 
 </manifest>

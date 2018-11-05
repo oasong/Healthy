@@ -1,11 +1,8 @@
 package it59070098.kmitl.healthy;
 
-import android.app.ListActivity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -26,6 +23,7 @@ public class menupage extends AppCompatActivity {
         menu.clear();
         menu.add("BMI");
         menu.add("Weight");
+        menu.add("Sleep");
         menu.add("Sign Out");
 
         ArrayAdapter<String> menuAdapter = new ArrayAdapter<>(
@@ -42,6 +40,9 @@ public class menupage extends AppCompatActivity {
                     Intent stIntent = new Intent(getApplicationContext(), weightpage.class);
                     startActivity(stIntent);
                 }else if (position == 2){
+                    Intent stIntent = new Intent(getApplicationContext(), sleep.class);
+                    startActivity(stIntent);
+                }else if (position == 3){
                     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                     firebaseAuth.signOut();
                     Intent stIntent = new Intent(getApplicationContext(), MainActivity.class);
