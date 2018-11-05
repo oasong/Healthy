@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import org.joda.time.DateTime;
 import org.joda.time.Hours;
@@ -109,6 +110,7 @@ public class sleepform extends AppCompatActivity {
         item.setDuration(calculateTime());
         db.insertSleepTime(item);
         Log.d(TAG, "data saved");
+        Toast.makeText(sleepform.this, "saved data", Toast.LENGTH_LONG).show();
     }
 
     private void updateData() {
@@ -119,6 +121,7 @@ public class sleepform extends AppCompatActivity {
         item.setDuration(calculateTime());
         db.update(item);
         Log.d(TAG, "item id" + item.getId());
+        Toast.makeText(sleepform.this, "saved data", Toast.LENGTH_LONG).show();
     }
 
     private String calculateTime() {
