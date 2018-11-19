@@ -25,6 +25,7 @@ public class menupage extends AppCompatActivity {
         menu.add("Weight");
         menu.add("Sleep");
         menu.add("Sign Out");
+        menu.add("Post");
 
         ArrayAdapter<String> menuAdapter = new ArrayAdapter<>(
                 menupage.this, android.R.layout.simple_list_item_1, menu);
@@ -46,6 +47,9 @@ public class menupage extends AppCompatActivity {
                     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                     firebaseAuth.signOut();
                     Intent stIntent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(stIntent);
+                }else if (position == 4){
+                    Intent stIntent = new Intent(getApplicationContext(), post.class);
                     startActivity(stIntent);
                 }
             }
