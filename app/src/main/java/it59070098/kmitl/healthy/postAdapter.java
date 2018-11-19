@@ -37,12 +37,12 @@ public class postAdapter extends ArrayAdapter<postclass> {
         post_title.setText(row.getTitle());
         post_body.setText(row.getBody());
         post_name.setText(row.getName());
-//        if (row.getEmail().isEmpty()){
-//            post_email.setText("");
-//        }else{
-//            post_email.setText("("+row.getEmail()+")");
-//        }
-        post_email.setText(row.getEmail());
+        if (row.getEmail() == null){
+            post_email.setText("");
+        }else{
+            post_email.setText("("+row.getEmail()+")");
+        }
+//        post_email.setText(row.getEmail());
 
 
         return postitem;
